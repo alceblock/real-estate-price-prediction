@@ -1,12 +1,15 @@
 # real-estate-price-prediction
 
-This project develops an optimized real estate price prediction engine by benchmarking three advanced regularization methods: Ridge, Lasso, and Elastic Net. 
+## Abstract
 
-Using a real-world housing dataset, the pipeline covers the complete machine learning workflow:
-* **Feature Engineering:** Dummy encoding for categorical variables (furnishing status) and quantile-based categorization for property area to maximize predictive weight.
-* **Model Pipeline:** 2nd-degree Polynomial Features transformation followed by StandardScaler normalization.
-* **Evaluation:** Hyperparameter tuning via 5-fold Cross-Validation, comparative analysis of MSE/R² metrics on both training and test sets, and residual distribution testing.
+This project focuses on the engineering and analytical reasoning required to build a reliable real estate price prediction engine. Rather than relying on simple linear metrics, the core objective is to analyze how different regularization strategies—Ridge, Lasso, and Elastic Net—react to expanded feature complexity while preventing overfitting.
 
-The final model effectively eliminates overfitting, maintaining high generalization stability on unseen data while managing feature complexity.
+The pipeline is driven by an end-to-end analytical workflow:
+* **Exploratory Data Analysis:** Investigating distribution skewness and linear trends to evaluate whether target transformations or structural feature categorization (such as grouping house areas) yield better predictive performance.
+* **Pipeline Expansion:** Testing how models handle complexity by introducing 2nd-degree polynomial interactions, ensuring data normalization through rigorous scaling.
+* **Regularization & Complexity Trade-offs:** Benchmarking the algorithms not just on raw accuracy, but on their ability to manage feature weight—evaluating Lasso’s aggressive feature elimination against the predictive stability of Ridge and Elastic Net.
+
+By validating the results through 5-fold cross-validation and analyzing the adequacy of residual distributions, the project demonstrates a thorough decision-making process to ensure high model generalization on unseen data.
 
 To see more, extended explanation in the project.
+
