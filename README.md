@@ -2,14 +2,14 @@
 
 ## Abstract
 
-This project focuses on the engineering and analytical reasoning required to build a reliable real estate price prediction engine. Rather than relying on simple linear metrics, the core objective is to analyze how different regularization strategies—Ridge, Lasso, and Elastic Net—react to expanded feature complexity while preventing overfitting.
+This project develops an optimized real estate price prediction engine by benchmarking three advanced regularization methods—Ridge, Lasso, and Elastic Net—to analyze how they balance market complexity and model stability.
 
-The pipeline is driven by an end-to-end analytical workflow:
-* **Exploratory Data Analysis:** Investigating distribution skewness and linear trends to evaluate whether target transformations or structural feature categorization (such as grouping house areas) yield better predictive performance.
-* **Pipeline Expansion:** Testing how models handle complexity by introducing 2nd-degree polynomial interactions, ensuring data normalization through rigorous scaling.
-* **Regularization & Complexity Trade-offs:** Benchmarking the algorithms not just on raw accuracy, but on their ability to manage feature weight—evaluating Lasso’s aggressive feature elimination against the predictive stability of Ridge and Elastic Net.
+Using a real-world housing dataset, the pipeline covers an end-to-end analytical workflow:
+* **Exploratory Data Analysis & Feature Engineering:** Investigating distribution skewness and linear trends to justify preprocessing choices, implementing dummy encoding for furnishing status and quantile-based categorization for property area to maximize predictive weight.
+* **Model Pipeline & Expansion:** Testing how models handle structural complexity by introducing 2nd-degree Polynomial Features, ensured by StandardScaler normalization.
+* **Evaluation & Regularization Trade-offs:** Tuning hyperparameters via 5-fold Cross-Validation to benchmark the algorithms not just on raw accuracy (MSE/R²), but on their ability to manage feature weight—comparing Lasso’s aggressive feature elimination against the stability of Ridge and Elastic Net.
 
-By validating the results through 5-fold cross-validation and analyzing the adequacy of residual distributions, the project demonstrates a thorough decision-making process to ensure high model generalization on unseen data.
+By validating metrics across both training and test sets and testing residual distributions, the final model effectively eliminates overfitting, maintaining high generalization while managing feature complexity.
 
 To see more, extended explanation in the project.
 
